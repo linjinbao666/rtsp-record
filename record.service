@@ -1,0 +1,11 @@
+[Unit]
+Description=Record Daemon
+
+[Service]
+Type=simple
+User=root
+ExecStart=/mnt/dd/media/live/stream/record.sh
+Restart=on-failure
+
+[Install]
+WantedBy=default.target
